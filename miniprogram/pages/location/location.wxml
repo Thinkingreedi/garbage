@@ -1,0 +1,11 @@
+<view class="main">
+  <map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="15" markers="{{markers}}"
+    bindmarkertap="doMarkertap" polyline="{{polyline}}" show-location>
+  </map>
+  <view class="descript">
+    <view class="left">
+      <view class="name">{{toiletName}}</view>
+      <view class="brief-addr">{{briefAddr}}({{distance}}  时间：{{cost}})</view>
+    </view>
+  </view>
+</view>

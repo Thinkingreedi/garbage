@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "searchbar": "../../miniprogram_npm/weui-miniprogram/searchbar/searchbar",
+    "actionsheet":"../../miniprogram_npm/weui-miniprogram/actionsheet/actionsheet",
+    "garbage-dialog": "../../components/garbage-dialog/garbage-dialog"
+  },
+  "navigationBarTitleText": "搜索"
+}

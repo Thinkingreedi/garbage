@@ -1,0 +1,64 @@
+<view class="myIntegral">
+  <view class="header">
+    <view class="info">我的积分</view>
+    <view class="num">{{userInfo.integral}}</view>
+  </view>
+  <view class="body">
+    <view class="cu-list menu sm-border card-menu margin-top">
+      <view class="cu-item">
+        <view class="content body-title">
+          <text class="vertical-line"></text>
+          <text class="text-grey title">每推荐一个好友得50积分</text>
+        </view>
+      </view>
+      <view class="cu-item m-item">
+        <view class="content m-content">
+          <text class="cuIcon-roundcheck lg  m-icon"></text>
+          <text class="text-grey m-text">总计到帐积分</text>
+        </view>
+        <view class="action m-action">
+          <text class="m-action-text">+{{allAddIntegral}}</text>
+        </view>
+      </view>
+      <view class="cu-item m-item">
+        <view class="content m-content">
+          <text class="cuIcon-share lg  m-icon"></text>
+          <text class="text-grey m-text">推荐给好友</text>
+        </view>
+        <view class="action m-action">
+          <button class="cu-btn round shadow m-button" open-type="share">
+            立即推荐
+          </button>
+        </view>
+      </view>
+      <view class="cu-item m-item" bindtap="shareListHandle">
+        <view class="content m-content">
+          <text class="cuIcon-friendadd lg  m-icon"></text>
+          <text class="text-grey m-text">我推荐的好友</text>
+        </view>
+        <view class="action m-action">
+          <text class="m-action-text">{{shareList.length}}人</text>
+        </view>
+      </view>
+    </view>
+    <view class="cu-list menu sm-border card-menu margin-top">
+      <view class="cu-item">
+        <view class="content body-title">
+          <text class="vertical-line"></text>
+          <text class="text-grey title">增值服务</text>
+        </view>
+      </view>
+      <view class="cu-item m-item">
+        <view class="content m-content">
+          <text class="cuIcon-shop lg m-icon"></text>
+          <text class="text-grey m-text">积分商城</text>
+        </view>
+        <view class="action m-action" bindtap="goShop">
+          <button class="cu-btn round shadow m-button">
+            前往
+          </button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

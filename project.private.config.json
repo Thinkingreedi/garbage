@@ -1,0 +1,70 @@
+{
+  "setting": {
+    "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/answer/answer-home/answer-home",
+          "pathName": "pages/answer/answer-home/answer-home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/answer/answer-ranking/answer-ranking",
+          "pathName": "pages/answer/answer-ranking/answer-ranking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/answer/answer-run/answer-run",
+          "pathName": "pages/answer/answer-run/answer-run",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/answer/answer-history/answer-history",
+          "pathName": "pages/answer/answer-history/answer-history",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/answer/answer-run/answer-run",
+          "pathName": "pages/answer/answer-run/answer-run",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/adminAnswer/adminAnswer",
+          "pathName": "pages/adminAnswer/adminAnswer",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "scene=nickName%3D1024",
+          "scene": 1011
+        },
+        {
+          "name": "",
+          "pathName": "pages/result/result",
+          "query": "list=%5B%7B%22_id%22%3A%221b64dd7b5f66ea3300252d952d0238cc%22%2C%22name%22%3A%22%E7%94%B5%E5%86%B0%E7%AE%B1%22%2C%22type%22%3A%22%E5%8F%AF%E5%9B%9E%E6%94%B6%E7%89%A9%22%2C%22check%22%3A%22%E5%8F%AF%E5%9B%9E%E6%94%B6%E7%89%A9%22%7D%2C%7B%22_id%22%3A%22d782d4875f66e939001e664f58227153%22%2C%22name%22%3A%22%E7%94%B5%E8%A7%86%E6%9C%BA%22%2C%22type%22%3A%22%E5%8F%AF%E5%9B%9E%E6%94%B6%E7%89%A9%22%2C%22check%22%3A%22%E6%9C%89%E5%AE%B3%E5%9E%83%E5%9C%BE%22%7D%2C%7B%22_id%22%3A%228e5be7055f65d4e80021de7315079ff7%22%2C%22name%22%3A%22%E8%8B%B9%E6%9E%9C%22%2C%22type%22%3A%22%E5%8E%A8%E4%BD%99%E5%9E%83%E5%9C%BE%22%2C%22check%22%3A%22%E5%85%B6%E4%BB%96%E5%9E%83%E5%9C%BE%22%7D%5D&intervalTime=00%3A06",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/user/user",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "libVersion": "2.30.0",
+  "projectname": "garbage"
+}

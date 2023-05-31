@@ -1,0 +1,46 @@
+.feedback {
+  padding: 0rpx 50rpx;
+
+}
+
+.footer {
+  margin-top: 40rpx;
+}
+
+.tui-box-upload {
+  margin-top: 20rpx;
+}
+
+.textarea-ui {
+  width: 100%;
+  font-size: 27rpx;
+  font-family: STXihei;
+  font-weight: 400;
+  height: 100%;
+}
+
+.uni-textarea {
+  padding-top: 50rpx;
+  height: 150rpx;
+  position: relative;
+}
+
+
+/**
+* 底部按钮
+*/
+.bottom-btn {
+  width: 750rpx;
+  height: 104rpx;
+  font-size: 32rpx;
+  font-family: SimHei;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: rgba(26, 173, 25, 1);
+  line-height: 104rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  right: 0rpx;
+}

@@ -1,0 +1,101 @@
+page {
+  background: #dedede;
+}
+
+.content {
+  width: 80%;
+  margin: 20rpx auto 10rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  padding: 30rpx;
+  height: 80vh;
+  margin-top: 50rpx;
+}
+
+.title {
+  text-align: center;
+  font-weight: bold;
+  margin: 30rpx 0 50rpx;
+  font-size: 40rpx;
+}
+
+.titles {
+  text-align: center;
+  font-weight: bold;
+  margin: 30rpx 0 50rpx;
+  font-size: 30rpx;
+}
+
+.c_image {
+  width: 30%;
+  margin: 30rpx auto;
+  display: flex;
+}
+
+.desc {
+  font-size: 30rpx;
+  display: flex;
+  margin-bottom: 50rpx;
+}
+
+.sm_title {
+  font-size: 35rpx;
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.sm_remark {
+  font-size: 35rpx;
+  display: flex;
+  margin: 20rpx 0;
+}
+
+.share_btn {
+  position: fixed;
+  right: 20rpx;
+  bottom: 120rpx;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 30rpx;
+  text-align: center;
+  font-size: 25rpx;
+  color: #000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 2rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10rpx 25rpx;
+  box-shadow: 1px 1px 3px #7c7272,
+    1px -1px 3px #dedede,
+    -1px 1px 3px #dedede,
+    -1px -1px 3px #dedede;
+  -moz-box-shadow: 1px 1px 3px #7c7272,
+    1px -1px 3px #dedede,
+    -1px 1px 3px #dedede,
+    -1px -1px 3px #dedede;
+  -webkit-box-shadow: 1px 1px 3px #7c7272,
+    1px -1px 3px #dedede,
+    -1px 1px 3px #dedede,
+    -1px -1px 3px #dedede;
+}
+
+.share_btn image {
+  width: 30rpx;
+  height: 30rpx !important;
+  margin-right: 10rpx;
+}
+
+.share_btyn {
+  position: fixed;
+  right: 20rpx;
+  bottom: 120rpx;
+  width: 150rpx;
+  height: 50rpx;
+  background: transparent;
+  border-radius: 30rpx;
+}
+
+.share_btyn::after {
+  border: none;
+}

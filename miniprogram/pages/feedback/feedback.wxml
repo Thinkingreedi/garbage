@@ -1,0 +1,8 @@
+<view class="feedback">
+  <view class="uni-textarea">
+    <textarea bindconfirm="confirmTextArea" placeholder="反馈......（限140个字符）" maxlength="{{content_max}}"
+      class="textarea-ui" value="{{content}}" show-confirm-bar="{{true}}" placeholder-class="placeholderText" bindinput="bindTextarea"/>
+    </view>
+		<view class="bottom-btn" bindtap="send">发送给管理员</view>
+		
+	</view>

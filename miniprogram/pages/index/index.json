@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "card-swiper": "../../components/helang-cardSwiper/helang-cardSwiper",
+    "menu-list":"../../components/menu-list/menu-list"
+  },
+  "navigationStyle": "custom"
+}

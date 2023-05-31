@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "garbage-dialog": "../../components/garbage-dialog/garbage-dialog"
+  },
+  "navigationBarTitleText": "识别"
+}

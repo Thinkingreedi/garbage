@@ -1,0 +1,42 @@
+<view class="search">
+  <view class="searchbox">
+    <searchbar bindvoice="openVoice" value="{{searchKey}}" bindconfirm="inputConfirm"></searchbar>
+  </view>
+  <block wx:if="{{history.length>0}}">
+    <view class="tui-search-history">
+      <view class="tui-history-header">
+        <view class="tui-search-title">搜索历史</view>
+        <text class="cuIcon-delete lg text-gray" bindtap="openDelAction"></text>
+      </view>
+      <view class="tui-history-content">
+        <block wx:for="{{history}}" wx:key="index">
+          <view class="tag" bindtap="tagClick" data-tag="{{item}}">{{item}}</view>
+        </block>
+      </view>
+    </view>
+  </block>
+  <view class="tui-search-hot">
+    <view class="tui-hot-header">
+      <view class="tui-search-title">大家正在搜</view>
+    </view>
+    <view class="tui-hot-content">
+      <block wx:for="{{hot}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+        <block>
+          <view class="tag" bindtap="tagClick" data-tag="{{item}}">{{item}}</view>
+        </block>
+      </block>
+    </view>
+  </view>
+</view>
+
+<actionsheet bindactiontap="delHnader" show="{{showActionsheet}}" actions="{{groups}}" title="确认清空搜索历史吗？">
+</actionsheet>
+
+<view class="voice" wx:if="{{voice_show}}" bindtap="closeVoice">
+  <view class="icon-body" catchtap="startRecord" catch:longpress="handleRecordStart" catch:touchmove="handleTouchMove"
+    catch:touchend="handleRecordStop">
+    <view class="{{is_show?'cuIcon-stop':'cuIcon-voicefill'}} lg text-gray icon-show"></view>
+  </view>
+</view>
+
+<garbage-dialog show="{{dialogShow}}" bindclose="closeDialog" info="{{garbage}}"></garbage-dialog>

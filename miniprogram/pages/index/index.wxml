@@ -1,0 +1,14 @@
+<view class="index">
+  <!-- <view class="title" style="{{topNavStyle.style}}"> -->
+  <view class="title">
+    <view class="tab">
+      垃圾分类
+    </view>
+  </view>
+  <view class="box">
+    <card-swiper list="{{list}}" bindcardClick="cardClick"></card-swiper>
+  </view>
+  <view class="menu">
+    <menu-list></menu-list>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<view class="container">
+  <scroll-view class='content' scroll-y="{{true}}">
+    <view class='title'>{{category.title}}</view>
+    <image class="c_image" src='{{category.src}}' mode="widthFix"></image>
+    <text class='desc'>{{category.info}}</text>
+    <text class='sm_title'>投放指导</text>
+    <text class='sm_remark'>{{category.guidance}}</text>
+  </scroll-view>
+</view>
+<view class='share_btn'>
+  <image src='../../static/image/guide_tag.png' mode="widthFix"></image>
+  <text>分享</text>
+</view>
+<button open-type='share' class='share_btyn'></button>

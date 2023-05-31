@@ -1,0 +1,78 @@
+page {
+  background-color: var(--bg-c241);
+}
+
+.header {
+  background-color: var(--indexL);
+  height: 220rpx;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.header .info {
+  color: #fff;
+}
+
+.header .num {
+  color: #fff;
+  font-size: 58rpx;
+}
+
+.body-title {
+  display: flex;
+  align-items: center;
+  height: 50rpx;
+}
+
+.body-title .title {
+  color: var(--font-black6);
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.vertical-line {
+  height: 32rpx;
+  background-color: var(--indexL);
+  width: 8rpx;
+  display: inline-block;
+  border-radius: 30%;
+  margin: 0rpx 6rpx;
+}
+
+.m-item .m-content {
+  display: flex;
+  align-items: center;
+}
+
+.cu-list.menu>.cu-item.m-item .m-content .m-icon {
+  color: var(--indexL);
+  font-size: 40rpx;
+  margin-right: 0rpx;
+  width: 1.3em;
+  font-weight: bold;
+}
+
+.m-item .m-content .m-text {
+  font-size: 32rpx;
+}
+
+.m-action-text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--font-black6);
+}
+
+.m-action .m-button {
+  background-color: var(--indexL);
+  color: #ffffff;
+  width: auto;
+  font-weight: 500;
+  font-size: 34rpx;
+  height: 66rpx;
+  border-radius: 24rpx;
+  padding: 0rpx 22rpx;
+}
+

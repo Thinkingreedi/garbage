@@ -1,0 +1,31 @@
+<block wx:if="{{show}}">
+  <form class="wx-authorization-modal" bindsubmit="submitUserInfo">
+    <view class="wam__mask" bindtap="closeModal"></view>
+    <view class="wam__wrapper">
+      <view class="wam__close-btn" bindtap="closeModal"><text class="tn-icon-close"></text></view>
+      <view class="wam__title">获取您的昵称、头像</view>
+      <view class="wam__sub-title">获取用户头像、昵称，主要用于向用户提供具有辨识度的用户中心界面</view>
+      <view class="wam__avatar">
+        <view class="button-shadow">
+          <button class="button" open-type="chooseAvatar" bindchooseavatar="chooseAvatarEvent">
+            <view class="avatar__image">
+              <image class="image" src="{{userInfo.avatarUrl}}" mode="aspectFill">
+              </image>
+            </view>
+            <view class="avatar--icon">
+              <view class="tn-icon-camera-fill"></view>
+            </view>
+          </button>
+        </view>
+      </view>
+      <view class="wam__nickname">
+        <view class="nickname__data">
+          <input class="input" type="nickName" name="nickName" placeholder="请输入昵称" placeholder-style="color: #AAAAAA;" value="{{userInfo.nickName}}" bindinput="setNickname" bindblur="nicknamereviewHandle" />
+        </view>
+      </view>
+      <button hover-class="tn-btn-hover-class" class="wam__submit-btn" hover-stay-time="{{150}}" formType="submit">
+        保 存
+      </button>
+    </view>
+  </form>
+</block>

@@ -1,0 +1,247 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "tuniaoFont";
+  /* Project id 3784643 */
+  src:
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAN8AAsAAAAAB4gAAAMvAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHFQGYACDBgqCQIIdATYCJAMMCwgABCAFhH8HPRuYBiMRpmvPIfurAzsYPj7DCVbrRAmElfXCs4V6xacO8aHO69VXu54tTy8h0hcJ7ufgieY+3+xscrn9B8wKQQFBywplLZCw9SwcOyZ5pKsoAQAbcICJTr7AjPPqr06NRkeIAemFpXv8cje1+/LkuLvD789WJZUANjOe9F76qptDOSMUui/Ua0WQKpZGXaqf5hHZdAD6x8tRJtRKtQd7j5UKkk6lWywYkGADCZBnGLugJd6CAI4GOjH956Ep4k7imdNkYTGFAkm2nJyPrBNwA7YhWwgQ/K4bLXITD8wl8xxuBN+XwyYJwOAp5jFjOwNbPNwd3l3WiyFAv3sCBLjcAB6gQM3GjLLSbJpDo1ANiqsiFiX7WAQzqTcMA06j/pb/eAbEx8yMAaAChg3sDjs6COwub8IAoAD4PEZkA7iAZClPKdicmJLc2OiZcQC3cV613sc3Ab9W7YItQtio9YgdKGjgr+ANlbg5gPvXFacv8IyvKTH4pcjV7VIcfnuIAUd3VCbxcCIKj++rvr/hpx/iwxd4/5mxDXeILbBp2+ByMIlGMuQEU3gjiVaMcXk8Dn2gWo5wuRwuIldLRqRwWogvmCRXE9/kSvrVQP4iFDVWRSbRakMk/AtcBYVpO6rpah1V9J/m/Wt+q8WfsOV+S5KFTGD5dwW9KFstZUs5smuYK3V495zwUG+r/Izf0PWtbWj/HUQsAL9u+cGK8NCiAgRnaRJ49fqljrxWc4PaKs4pQwBlMLUeAzgcEGLakvg5nCZ3zgTBkZzAEEUuFEeJyMrq4BGhGT6OPjiqGd4eIZkLKGKjgTKuAAgpPIAhjmdQUngnsrJdeKTxBz4pkgjHjJQeFqFMXv8PQqg0QP+F2cbAdoHqFmaM52jYlcbNoeTq4CtPkjzHAE1Zl0QvFEjGmp9fY6vKwBI9kOvIuQhJ4kJWy0k1dVXFVXcpbfTmIIRKA/RfmG0M7G1T3cKM8VwMXGlEnR1KY0uU+CTJnM1ODk1ZdxJdSOjYdGOp+TW2k6szsNg8qIvIuQipetFCVstpQCB1lcXHXUl5ZOpfdBvgMI9QMaJi8TZdzLS36K8/ueDZOWMAAA==') format('woff2'),
+    url('//at.alicdn.com/t/c/font_3784643_5jru9pe5fad.woff?t=1669045092678') format('woff'),
+    url('//at.alicdn.com/t/c/font_3784643_5jru9pe5fad.ttf?t=1669045092678') format('truetype');
+}
+
+[class*='tn-icon-'] {
+  font-family: 'tuniaoFont' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tn-icon-close:before {
+  content: "\e74d";
+}
+
+.tn-icon-camera-fill:before {
+  content: "\e75d";
+}
+
+.wx-authorization-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 99998;
+}
+
+.wx-authorization-modal view {
+  box-sizing: border-box;
+}
+
+.wx-authorization-modal .image {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.wx-authorization-modal .wam {
+  /* mask */
+  /* close-btn */
+  /* wrapper */
+  /* title */
+  /* sub-title */
+  /* 头像选择 */
+  /* 昵称 */
+  /* 保存按钮 */
+}
+
+.wx-authorization-modal .wam__mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-animation: showMask 0.25s ease 0.1s forwards;
+  animation: showMask 0.25s ease 0.1s forwards;
+}
+
+.wx-authorization-modal .wam__close-btn {
+  position: absolute;
+  top: 30rpx;
+  right: 30rpx;
+  z-index: 99999;
+}
+
+.wx-authorization-modal .wam__wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 20rpx 20rpx 0rpx 0rpx;
+  padding: 40rpx;
+  padding-top: 60rpx;
+  padding-bottom: 40rpx;
+  padding-bottom: calc(constant(safe-area-inset-bottom) + 40rpx);
+  padding-bottom: calc(env(safe-area-inset-bottom) + 40rpx);
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-animation: showWrapper 0.25s ease 0.1s forwards;
+  animation: showWrapper 0.25s ease 0.1s forwards;
+  z-index: 99999;
+}
+
+.wx-authorization-modal .wam__title {
+  font-size: 34rpx;
+}
+
+.wx-authorization-modal .wam__sub-title {
+  font-size: 26rpx;
+  color: #AAAAAA;
+  margin-top: 16rpx;
+  padding-bottom: 30rpx;
+}
+
+.wx-authorization-modal .wam__avatar {
+  width: 100%;
+  margin-top: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-authorization-modal .wam__avatar .button-shadow {
+  border: 8rpx solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0rpx 0rpx 80rpx 0rpx rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+}
+
+.wx-authorization-modal .wam__avatar .button {
+  position: relative;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  overflow: visible;
+  background-image: repeating-linear-gradient(45deg, #E4E9EC, #F8F7F8);
+  color: #FFFFFF;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+}
+
+.wx-authorization-modal .wam__avatar .button::after {
+  border: none;
+}
+
+.wx-authorization-modal .wam__avatar .avatar__empty,
+.wx-authorization-modal .wam__avatar .avatar__image {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.wx-authorization-modal .wam__avatar .avatar--icon {
+  position: absolute;
+  right: -10rpx;
+  bottom: -6rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background-color: #1D2541;
+  color: #FFFFFF;
+  border-radius: 50%;
+  border: 6rpx solid #FFFFFF;
+  line-height: 1;
+  font-size: 36rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wx-authorization-modal .wam__nickname {
+  margin-top: 40rpx;
+}
+
+.wx-authorization-modal .wam__nickname .nickname__data {
+  margin-top: 16rpx;
+  width: 100%;
+  padding: 26rpx 20rpx;
+  border-radius: 10rpx;
+  background-color: #F8F7F8;
+}
+
+.wx-authorization-modal .wam__nickname .nickname__data .input {
+  color: #080808;
+}
+
+.wx-authorization-modal .wam__submit-btn {
+  width: 100%;
+  background-color: #05C160;
+  color: #FFFFFF;
+  margin-top: 60rpx;
+  border-radius: 10rpx;
+  padding: 25rpx;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+}
+
+.wx-authorization-modal .wam__submit-btn.disabled {
+  background-color: #E6E6E6;
+}
+
+.tn-btn-hover-class {
+  box-shadow: inset 10rpx 2rpx 40rpx 0rpx rgba(0, 0, 0, 0.05);
+}
+
+@-webkit-keyframes showMask {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes showMask {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes showWrapper {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}
+
+@keyframes showWrapper {
+  0% {
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+
+  100% {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+  }
+}

@@ -1,0 +1,29 @@
+@import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+@import "./static/css/animation.wxss";
+@import "./static/css/icon.wxss";
+@import "./static/css/main.wxss";
+@import "./static/css/my-icon.wxss";
+
+page {
+	color: #333;
+	background: #fff;
+	--indexL: #00cc77;
+	--bg-c241: rgb(241, 241, 241);
+	--font-black6: rgba(0, 0, 0, 0.5);
+}
+
+.m-btn {
+	border-radius: 16rpx;
+	background-color: var(--indexL);
+}
+
+
+.info-lable {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 20rpx;
+	color: #aaaaaa;
+	font-size: 22rpx;
+	text-align: center;
+}

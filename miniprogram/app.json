@@ -1,0 +1,84 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/photo/photo",
+    "pages/detail/detail",
+    "pages/gps/gps",
+    "pages/location/location",
+    "pages/comm/comm",
+    "pages/answer/answer-home/answer-home",
+    "pages/answer/answer-run/answer-run",
+    "pages/user/user",
+    "pages/commInfo/commInfo",
+    "pages/result/result",
+    "pages/likeList/likeList",
+    "pages/wrongList/wrongList",
+    "pages/adminList/adminList",
+    "pages/adminAnswer/adminAnswer",
+    "pages/download/download",
+    "pages/integral/integral",
+    "pages/feedback/feedback",
+    "pages/adminComm/commAdd/commAdd",
+    "pages/adminComm/commUpdata/commUpdata",
+    "pages/adminComm/commList/commList",
+    "pages/adminUser/userList/userList",
+    "pages/adminGoods/goodsAdd/goodsAdd",
+    "pages/adminGoods/goodsUpdata/goodsUpdata",
+    "pages/adminGoods/goodsList/goodsList",
+    "pages/adminFeedback/feedbackList/feedbackList",
+    "pages/answer/answer-ranking/answer-ranking",
+    "pages/answer/answer-history/answer-history",
+    "pages/myIntegral/myIntegral",
+    "pages/shareList/shareList",
+    "pages/settings/settings"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "垃圾分类",
+    "navigationBarTextStyle": "black"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#00cc77",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/static/image/home.png",
+        "selectedIconPath": "/static/image/home_action.png"
+      },
+      {
+        "pagePath": "pages/comm/comm",
+        "text": " 资讯",
+        "iconPath": "/static/image/comm.png",
+        "selectedIconPath": "/static/image/comm-action.png"
+      },
+      {
+        "pagePath": "pages/answer/answer-home/answer-home",
+        "text": " 答题",
+        "iconPath": "/static/image/answer.png",
+        "selectedIconPath": "/static/image/answer_action.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": " 用户",
+        "iconPath": "/static/image/user.png",
+        "selectedIconPath": "/static/image/user_action.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
